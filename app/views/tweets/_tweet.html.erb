@@ -1,0 +1,35 @@
+
+<div class="parent" style="margin-top:1rem;display:flex;gap:2rem;border:1px solid #ccc;padding:1rem;">
+
+<div>
+<img src="<%= tweet.twitter_account.image %>" class="card-img-top" alt="profile image" style="border-radius:50%;width:5rem;height:5rem;">
+</div>
+
+<div style="display:flex;justify-content:space-between;width:100%;">
+
+    <div >
+    <h3><%= tweet.body %></h3>
+    <h6><%= tweet.twitter_account.name %></h6>
+    <%= link_to "@#{tweet.twitter_account.username}", "https://x.com/#{tweet.twitter_account.username}" ,target: :_blank ,style: "text-decoration:none;" %>
+
+
+    <% if tweet.published? %>
+
+    <%= link_to "View on X", "https://x.com/#{tweet.twitter_account.username}/status/#{tweet.tweet_id}", target: :_blank, class: "btn btn-secondary mt-2"  ,style:"display:block;width:7rem;" %>
+
+    <% else%>
+        <p>Scheduled at <%= tweet.publish_at %></p>
+
+        <%= link_to "Edit Tweet",edit_tweet_path(tweet) %>
+    <% end %>
+
+    </div>
+
+ 
+
+    
+    
+
+</div>
+
+</div>

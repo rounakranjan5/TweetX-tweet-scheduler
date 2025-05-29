@@ -1,0 +1,7 @@
+<h1>Edit Scheduled Tweet</h1>
+
+<%= render 'form', tweet: @tweet %>
+
+ <% if @tweet.persisted? %>
+  <%= button_to "Delete",@tweet,method: :delete ,class: "btn btn-outline-danger" %>
+<% end %>
