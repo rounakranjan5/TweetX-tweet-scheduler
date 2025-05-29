@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/sparklemotion/sqlite3-ruby
-  revision: 402aa1f960f4d93e8cd6f682dc105b4ceae9c784
+  revision: bbef0882ae1f270ca561878b332f887986d84afa
   specs:
     sqlite3 (2.6.0)
       mini_portile2 (~> 2.8.0)
