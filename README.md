@@ -1,3 +1,2 @@
-# README
 
-TweetX - Your Personal Tweet Scheduler
+# TweetX - Your Personal Tweet Scheduler
